@@ -1,5 +1,6 @@
 describe('this is a test', () => {
   it('can equal', () => {
-    expect(1).toEqual(1);
+    const result: number = 1;
+    expect(result).toEqual(1);
   });
 });

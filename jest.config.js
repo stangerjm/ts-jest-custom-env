@@ -1,5 +1,10 @@
+const { defaults: tsjPresets } = require('ts-jest/presets');
+
 module.exports = {
-  preset: 'ts-jest',
+  preset: 'jest-puppeteer',
+  transform: {
+    ...tsjPresets.transform,
+  },
   testMatch: [
     '<rootDir>/tests/**/*.spec.ts',
   ],
